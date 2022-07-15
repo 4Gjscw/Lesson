@@ -90,3 +90,12 @@ background-color: white;
 footer nav a:hover{
     color: black;
 }
+th, td {
+    border: 1px solid rgb(0, 0, 0);
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+}
+table{
+    border-collapse: collapse;
+}
