@@ -25,31 +25,47 @@
         </nav>
     </header>
 
-    Coffee Survey
+    <h1>Coffee Survey</h1>
+    <aside>
+        <figure>
+            <img src="images/espresso.jpg" width="200" height="169" alt="a cup of espresso">
+        </figure>
+    </aside>
+    <form action="survey.php" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            Your Name<br />
+            <input type="text" name="name" required autofocus size="40" /><br />
 
-    Your Name
+            Email Address<br />
+            <input type="email" name="email" required placeholder="enter a valid email adress" size="40" /><br />
+        </fieldset>
+        <fieldset>
+            <legend>Your Coffee Preferences</legend>
 
-    Email Address
+            Tell us your coffee preparation methods.<br />
+            <textarea name="preparation-method" cols="40" rows="6"></textarea><br />
+            <br />
+            Do you grind your own beans?<br />
+            <input type="radio" name="grind-own-beans" value="y" />yes<br />
+            <input type="radio" name="grind-own-beans" value="n" />no<br />
+            <br />
+            How do you drink your coffee?<br />
+            <input type="checkbox" name="how-drink-coffee" value="sugar" />with sugar<br />
+            <input type="checkbox" name="how-drink-coffee" value="cream" />with cream<br />
+            <br />
 
-    Tell us your coffee preparation methods.
-
-    Do you grind your own beans?
-    yes
-    no
-
-    How do you drink your coffee?
-    with sugar
-    with cream
-
-    What is your favorite coffee drink?
-
-    please select a drink
-    drip coffee
-    french press
-    espresso
-    latte
-    flavored
-
+            What is your favorite coffee drink?<br />
+            <select name="fav-coffee-drink">
+                <option value="">please select a drink</option>
+                <option value="drip">drip coffee</option>
+                <option value="french">french press</option>
+                <option value="esp">espresso</option>
+                <option value="latte">latte</option>
+                <option value="flavored">flavored</option>
+            </select>
+        </fieldset>
+    </form>
     <footer>
         <nav>
             <ul>
