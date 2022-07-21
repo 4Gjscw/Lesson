@@ -99,3 +99,8 @@ th, td {
 table{
     border-collapse: collapse;
 }
+video{
+    margin-bottom: 20px;
+    margin-left: 160px;
+    filter: grayscale(50%);
+}
